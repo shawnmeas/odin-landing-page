@@ -4,6 +4,7 @@ body{
 }
 
 .body {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -37,13 +38,13 @@ body{
 }
 
 .hero {
-    padding-bottom: 64px;
+    padding-bottom: 32px;
 }
 
 .hero .container {
     padding: 0 64px;
     display: flex;
-    gap: 64px;
+    justify-content: space-between;
 }
 
 .hero .textcontainer {
@@ -59,7 +60,7 @@ body{
 
 .information {
     margin-top: 32px;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +95,7 @@ body{
 .quote {
     background-color: #e5e7eb;
     color: #1f2937;
-    padding: 64px 128px;
+    padding: 32px 196px;
     display: flex;
     flex-direction: column;
 }
@@ -111,6 +112,41 @@ body{
     text-align: right;
 }
 
+.calltoaction {
+    padding: 0 64px;
+}
+
+.calltoaction .container {
+    margin: 32px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 32px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calltoaction .textcontainer {
+    color:#f9faf8;
+}
+
+.calltoaction .actionheader {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.calltoaction .actionbutton {
+    border: 2px solid #f9faf8;
+    border-radius: 10px;
+}
+
+.footer {
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 ul {
     list-style: none;
 }
@@ -122,4 +158,9 @@ button {
     padding: 8px 16px;
     border: 1px solid #3882f6;
     font-weight: bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
