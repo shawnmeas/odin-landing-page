@@ -1,7 +1,12 @@
 body{
     margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
 
+.body {
+    display: flex;
+    flex-direction: column;
+}
 .header, .hero, .footer {
     background-color: #1f2937;
     color: #f9faf8;
@@ -52,18 +57,58 @@ body{
     font-weight: bolder;
 }
 
-
-
 .information {
+    margin-top: 32px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
 
+.information .informationheader {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.information .container {
+    display: flex;
+    gap: 64px;
+}
+
+.infoitem {
+    color: #1f2937;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: center;
+}
+
+.infoitem .infoimage img {
+    width: 200px;
+    border-radius: 10%;
 }
 
 .quote {
     background-color: #e5e7eb;
     color: #1f2937;
+    padding: 64px 128px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote .text {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
+}
+
+.quote .attribution {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: right;
 }
 
 ul {
